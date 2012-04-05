@@ -69,6 +69,7 @@ ZipInfo* PartialZipInit(const char* url)
 	curl_easy_setopt(info->hCurl, CURLOPT_FOLLOWLOCATION, 1);
 	curl_easy_setopt(info->hCurl, CURLOPT_NOBODY, 1);
 	curl_easy_setopt(info->hCurl, CURLOPT_WRITEFUNCTION, dummyReceive);
+	curl_easy_setopt(info->hCurl, CURLOPT_SSL_VERIFYPEER, 0);
 
 	if(strncmp(info->url, "file://", 7) == 0)
 	{
