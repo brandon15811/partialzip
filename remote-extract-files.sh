@@ -1,5 +1,5 @@
 #!/bin/bash
-export zipurl="http://192.168.1.146/update-cm-7.2.0-RC1-olympus-signed.zip"
+export zipurl=""
 
 if [ -z $zipurl ]; then
 	echo "Set \$zipurl to a zip url (or a file as a file:// url)"
