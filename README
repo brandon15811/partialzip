@@ -1,7 +1,15 @@
 Use cmake 2.6 to create the Makefiles for this.
 
 Requires libcurl 7.19.4 for file:// URL support.
+Requires bash.
 
-test.c contains an example that is designed for a simple test.zip containing
-only a text.txt.
+test.c contains an example that is designed to be used with 
+remote-extract-files.sh in place of extract-files.sh
 
+The text file for test.c should be formatted with the source files from the
+zip on one line, and the desination on the next line.
+
+Example:
+
+../../../vendor/motorola/olympus/proprietary/etc
+/system/lib/libmirror.so
